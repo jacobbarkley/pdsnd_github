@@ -32,7 +32,7 @@ def get_filters():
     while day not in days:
         day = input("Please enter an accepted day or enter 'All':\n").lower()
 
-    print('-'*60)
+    print('-'*70)
     return city, month, day
 
 
@@ -96,7 +96,7 @@ def time_stats(df):
     print(f"\nThe most popular start hour is: {popular_start_hour}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*70)
 
 "Data regardingthe bike stations"
 def station_stats(df):
@@ -120,7 +120,7 @@ def station_stats(df):
     print(f"\nThe most popular Start and stop point combination is:\n{popular_start_stop}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*70)
 
 "Data regarding trip duratrion"
 def trip_duration_stats(df):
@@ -138,7 +138,7 @@ def trip_duration_stats(df):
     print(f"\nThe average trip duration is:\n{mean_trip_duration} seconds")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*70)
 
 "Data regarding user statistics"
 def user_stats(df):
@@ -170,7 +170,7 @@ def user_stats(df):
         print("\nThere is no 'Birth Year' data in this file.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*70)
 
 #Createing function that upon request from the user, will show 5 rows of data at a time
 def display_data(df):
